@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo 2', sans-serif;
+}
+
+body {
+  background: url(../img/Pattern.png) center center/cover fixed no-repeat;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.body-shadow {
+  background: url(../img/Shadow.png) center center/cover fixed no-repeat;
+  min-width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.center-block {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 1120px;
+  max-height: 600px;
+}
+
+@media (min-width: 451px) and (max-width: 1025px) {
+  .center-block {
+    max-height: 700px;
+    max-width: 1025px;
+  }
+}
+
+@media (max-width: 450px) {
+  .center-block {
+    max-height: 1500px;
+    max-width: 450px;
+  }
+}
+
+h1 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 36px;
+  color: white;
+}
+
+@media (max-width: 450px) {
+  h1 {
+    top: 20px;
+  }
+}
+
+.block {
+  max-width: 1120px;
+  max-height: 480px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  padding: 0 20px;
+}
+
+@media (min-width: 451px) and (max-width: 1025px) {
+  .block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1025px;
+    padding: 0 50px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    top: 180px;
+    bottom: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 450px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto;
+    top: 150px;
+  }
+}
+
+.block-with-btm {
+  height: 100%;
+  width: 320px;
+  position: relative;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+@media (min-width: 451px) and (max-width: 1025px) {
+  .block-with-btm {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 450px) {
+  .block-with-btm {
+    margin-bottom: 70px;
+  }
+}
+
+.products-border {
+  height: 100%;
+  width: 320px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.products-border:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -64px;
+  left: -64px;
+  -webkit-box-shadow: 0 0 0 600px #0099cc;
+          box-shadow: 0 0 0 600px #0099cc;
+}
+
+.products-border.special:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -64px;
+  left: -64px;
+  -webkit-box-shadow: 0 0 0 600px #33ff33;
+          box-shadow: 0 0 0 600px #33ff33;
+}
+
+.products-border.special1:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -64px;
+  left: -64px;
+  -webkit-box-shadow: 0 0 0 600px #cccccc;
+          box-shadow: 0 0 0 600px #cccccc;
+}
+
+.products-part {
+  height: 98%;
+  width: 310px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.products-part:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -65px;
+  left: -65px;
+  -webkit-box-shadow: 0 0 0px 600px white;
+          box-shadow: 0 0 0px 600px white;
+}
+
+.products-part img {
+  position: absolute;
+  top: 190px;
+  left: -27px;
+}
+
+.products-text {
+  position: absolute;
+  top: 5px;
+  left: 45px;
+}
+
+.products-text p {
+  color: #666666;
+  font-size: 16px;
+  padding-left: 3px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 3;
+  -webkit-transition: 2.5s all;
+  transition: 2.5s all;
+}
+
+.text-up-hover {
+  display: none;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 0.65;
+  color: black;
+}
+
+h2 span {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+  padding-left: 2px;
+}
+
+.products-text blockquote {
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #666666;
+  padding-top: 20px;
+}
+
+.products-text blockquote span {
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #666666;
+  font-weight: bold;
+}
+
+.circle {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #0099cc;
+  bottom: 15px;
+  right: 15px;
+}
+
+.circle p {
+  padding-top: 23px;
+  font-size: 42px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  text-align: center;
+  line-height: 0.5;
+}
+
+.circle p span {
+  font-size: 21px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.text-bottom {
+  position: absolute;
+  bottom: -30px;
+  font-size: 13px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.text-bottom p {
+  display: inline;
+}
+
+.text-bottom a {
+  text-decoration: none;
+  color: #0099cc;
+  border-bottom: 1px #0099cc dashed;
+}
+
+.text-bottom-hover {
+  display: none;
+}
+
+.text-bottom-disabled {
+  display: none;
+  color: #ffff66;
+}
+/*# sourceMappingURL=style.css.map */
